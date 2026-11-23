@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адольф Кетле — Биография и наследие</title>
+    <style>
+        :root {
+            --bg-color: #f8f9fa;
+            --text-color: #212529;
+            --accent-color: #2b5876;
+            --accent-light: #e9ecef;
+            --card-bg: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2b5876 0%, #4e4376 100%);
+            color: white;
+            padding: 4rem 1.5rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            color: var(--accent-color);
+            font-size: 1.8rem;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid var(--accent-light);
+            padding-bottom: 0.5rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            margin-bottom: 1.5rem;
+        }
+
+        /* Стили для блока с портретом */
+        .bio-flex {
+            display: flex;
+            gap: 1.8rem;
+            align-items: center;
+        }
+
+        .portrait-box {
+            flex-shrink: 0;
+            text-align: center;
+            width: 210px;
+        }
+
+        .portrait-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+            border: 3px solid var(--accent-light);
+            display: block;
+            background-color: #e9ecef;
+        }
+
+        .portrait-caption {
+            font-size: 0.8rem;
+            color: #6c757d;
+            margin-top: 0.5rem;
+        }
+
+        @media (max-width: 650px) {
+            .bio-flex {
+                flex-direction: column;
+                text-align: center;
+            }
+            .portrait-box {
+                width: 180px;
+            }
+        }
+
+        .timeline {
+            list-style: none;
+            border-left: 3px solid var(--accent-color);
+            padding-left: 1.5rem;
+        }
+
+        .timeline li {
+            margin-bottom: 1.2rem;
+            position: relative;
+        }
+
+        .timeline li::before {
+            content: "";
+            width: 12px;
+            height: 12px;
+            background: var(--accent-color);
+            border-radius: 50%;
+            position: absolute;
+            left: -1.95rem;
+            top: 0.4rem;
+        }
+
+        .year {
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .calc-box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: flex-end;
+        }
+
+        .input-group {
+            flex: 1;
+            min-width: 150px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 0.3rem;
+            font-size: 0.9rem;
+        }
+
+        input {
+            width: 100%;
+            padding: 0.6rem;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 0.65rem 1.5rem;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        button:hover {
+            background-color: #1e3f56;
+        }
+
+        #result {
+            margin-top: 1rem;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--accent-light);
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Ламбер Адольф Жак Кетле</h1>
+    <p>1796 — 1874 • Бельгийский математик, астроном, статистик и социолог</p>
+</header>
+
+<div class="container">
+    <section>
+        <h2>Кто такой Адольф Кетле?</h2>
+        <div class="card bio-flex">
+            <div class="portrait-box">
+                <!-- Положите файл quetelet.jpg в одну папку с index.html -->
+                <img src="quetelet.jpeg" alt="Портрет Адольфа Кетле">
+                <div class="portrait-caption">Адольф Кетле (1796–1874)</div>
+            </div>
+            <div>
+                <p style="margin-bottom: 0.8rem;"><strong>Адольф Кетле</strong> (в русской традиции фамилию часто ошибочно пишут как <em>Кетли</em> или <em>Кетлер</em>) — один из основателей современной научной статистики.</p>
+                <p>Он первым начал применять математические методы и теорию вероятностей для изучения общества, поведения людей и антропометрии, заложив основы современной демографии и социологии.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Основные вехи биографии</h2>
+        <ul class="timeline">
+            <li><span class="year">1796</span> — Родился 22 февраля в Генте (ныне Бельгия).</li>
+            <li><span class="year">1819</span> — Защитил докторскую диссертацию по математике в Гентском университете.</li>
+            <li><span class="year">1828</span> — Основал и возглавил Брюссельскую королевскую обсерваторию.</li>
+            <li><span class="year">1832</span> — Разработал математическую формулу соотношения веса и роста (Индекс Кетле).</li>
+            <li><span class="year">1835</span> — Опубликовал главный труд <em>«О человеке и развитии его способностей, или Опыт социальной физики»</em>.</li>
+            <li><span class="year">1874</span> — Скончался 17 февраля в Брюсселе в возрасте 77 лет.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Главный вклад в науку</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>«Средний человек»</h3>
+                <p>Кетле ввёл концепцию <em>l'homme moyen</em> — статистического портрета человека со средними физическими и социальными характеристиками для изучения закономерностей общества.</p>
+            </div>
+            <div class="card">
+                <h3>Социальная статистика</h3>
+                <p>Доказал, что такие явления, как рождаемость, смертность и даже уровень преступности, подчиняются строгим статистическим закономерностям.</p>
+            </div>
+            <div class="card">
+                <h3>Индекс массы тела</h3>
+                <p>Предложил формулу <strong>вес / рост²</strong> для оценки физического развития больших групп населения, которая в XX веке стала мировым медицинским стандартом.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Интерактивный калькулятор Индекса Кетле</h2>
+        <div class="card">
+            <p style="margin-bottom: 1rem;">Проверьте знаменитую формулу учёного на практике:</p>
+            <div class="calc-box">
+                <div class="input-group">
+                    <label for="weight">Вес (кг)</label>
+                    <input type="number" id="weight" placeholder="Например, 70" min="20" max="300">
+                </div>
+                <div class="input-group">
+                    <label for="height">Рост (см)</label>
+                    <input type="number" id="height" placeholder="Например, 175" min="50" max="250">
+                </div>
+                <button onclick="calculateBMI()">Рассчитать</button>
+            </div>
+            <div id="result"></div>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>Информационный одностраничный сайт разработан благодаря (ИИ) obabkovdmitrij3</p>
+</footer>
+
+<script>
+    function calculateBMI() {
+        const weight = parseFloat(document.getElementById('weight').value);
+        const heightCm = parseFloat(document.getElementById('height').value);
+        const resultDiv = document.getElementById('result');
+
+        if (!weight || !heightCm || weight <= 0 || heightCm <= 0) {
+            resultDiv.style.color = '#d9534f';
+            resultDiv.textContent = 'Пожалуйста, введите корректные значения веса и роста.';
+            return;
+        }
+
+        const heightM = heightCm / 100;
+        const bmi = (weight / (heightM * heightM)).toFixed(1);
+        let category = '';
+
+        if (bmi < 18.5) category = 'Недостаточная масса тела';
+        else if (bmi < 25) category = 'Нормальная масса тела';
+        else if (bmi < 30) category = 'Избыточная масса тела';
+        else category = 'Ожирение';
+
+        resultDiv.style.color = '#2b5876';
+        resultDiv.textContent = `Ваш индекс Кетле (ИМТ): ${bmi} — ${category}`;
+    }
+</script>
+
+</body>
+</html>
